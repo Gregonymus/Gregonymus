@@ -3,6 +3,19 @@
  <head>
    <title>Gergely Koban Portfolio</title>
  </head>
+ <style>
+  video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+ </style>
  <body>
    <nav>
      <ul>
@@ -15,24 +28,7 @@
   <video id="background-video" autoplay loop muted poster="GSFC_20180509_MMS_m12901_Turbulent_Magnetosheath~orig.mp4">
   <source src="GSFC_20180509_MMS_m12901_Turbulent_Magnetosheath~orig.mp4" type="video/mp4">
   </video>
-  #background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-  @media (max-width: 750px) {
-    #background-video { display: none; }
-    body {
-      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-      background-size: cover;
-    }
-}
+  
    <div class=”container”>
      <div class=”blurb”>
        <h1 style="text-align:center">Hi, I am Gergely Koban!</h1>
