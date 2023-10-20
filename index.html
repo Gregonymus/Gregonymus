@@ -13,7 +13,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
  h1 {
@@ -79,10 +79,6 @@ h1 {
   font-size: 3rem;
  }
 
- bgvideo {
-  z-index: -2;
- }
-
  .fullscreen-bg::before {
     z-index: -1;
     top: 0;
@@ -99,11 +95,9 @@ h1 {
  </style>
  <body style="background-color:black;">
   <div class="fullscreen-bg">
-  <div class="bgvideo">
   <video id="background-video" autoplay loop muted poster="GSFC_20180509_MMS_m12901_Turbulent_Magnetosheath~orig.mp4">
   <source src="GSFC_20180509_MMS_m12901_Turbulent_Magnetosheath~orig.mp4" type="video/mp4">
   </video>
-  </div>
   
    <div class=”container”>
      <div class=”blurb”>
